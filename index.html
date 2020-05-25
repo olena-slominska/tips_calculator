@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tips calculator PureJS&jQuery Slominska</title>
+      <meta charset="utf-8"  />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-compatible" content="ie=edge" />
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/SStipsstyles.css">
+     
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="scriptTips.js"></script>
+  </head>
+  <body>
+    <h1>Tips calculator jQuery & PureJS</h1>
+<div class="main">
+    <!-- container for jQuery code: -->
+    <div id="cont1" class="container">
+    <form id="jQform">
+      <fieldset data-quantity>
+      <label for="bill">Bill</label><br>
+      <input id="bill" type="number" value="0.00" pattern="[0-9]+">
+    </fieldset>
+      <fieldset data-quantity>
+        <label for="percent">Tip %</label><br>
+        <input id="percent" type="number" pattern="[0-9]+" value="10">
+      </fieldset>
+
+    <fieldset data-quantity>
+      <label for="pplnmbr">Number of people</label><br>
+      <input id="pplnmbr" type="number" name="quantity" pattern="[0-9]+" value="1">
+    </fieldset>
+  </form>
+    <div class="output">
+   <div class="output-item"><p>Tip<span id="tipresult"></span></p></div>
+    <div class="output-item"><p>Total<span id="totalresult"></span></p></div>
+    </div>
+  </div>
+
+<!-- container for pureJS: -->
+  <div id="cont2" class="container">
+    <form id="jsform">
+      <fieldset data-quantity>
+      <label for="bill2">Bill</label><br>
+      <input id="bill2" type="number" value="0.00" pattern="[0-9]+">
+    </fieldset>
+      <fieldset data-quantity>
+        <label for="percent2">Tip %</label><br>
+        <input id="percent2" type="number" pattern="[0-9]+" value="10">
+      </fieldset>
+
+    <fieldset data-quantity>
+      <label for="pplnmbr2">Number of people</label><br>
+      <input id="pplnmbr2" type="number" name="quantity" pattern="[0-9]+" value="1">
+    </fieldset>
+  </form>
+    <div class="output">
+   <div class="output-item"><p>Tip<span id="tipresult2"></span><span id="hidden"></span></p></div>
+    <div class="output-item"><p>Total<span id="totalresult2"></span><span id="hidden2"></span></p></div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
