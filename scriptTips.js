@@ -1,9 +1,9 @@
 // code using jQuery
 $(document).on('click check',"#cont1", function() {
   tips = eval(bill.value*percent.value/100/pplnmbr.value);
-  document.getElementById('tipresult').innerHTML = " $" + Number(tips).toFixed(2); 
+  $('#tipresult').html(" $" + Number(tips).toFixed(2)); 
   total = eval(bill.value/pplnmbr.value + tips);
-  document.getElementById('totalresult').innerHTML = " $" + Number(total).toFixed(2);
+  $('#totalresult').html(" $" + Number(total).toFixed(2));
   if (pplnmbr.value > 1) {
     $( "<style>#tipresult:after {content: '  per person'; font-size: 14px; color:#837c7c;} </style>" ).appendTo( "#tipresult" );
     $( "<style>#totalresult:after {content: '  per person'; font-size: 14px; color:#837c7c;} </style>" ).appendTo( "#totalresult" );
